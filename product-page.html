@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BX Slider</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+    <style>
+
+.bx-wrapper{
+    border: none;
+    background: transparent;
+    box-shadow: none;
+}
+
+#bx-pager {
+    text-align: left;
+    margin-top: -30px;
+  }
+
+  #bx-pager a {
+    margin: 0 3px;
+  }
+
+  #bx-pager a img {
+    padding: 3px;
+    border: solid #ccc 1px
+  }
+
+  #bx-pager a.active img {
+    border: solid #5280DD 1px;
+  }
+
+    </style>
+   
+</head>
+<body>
+
+    <ul class="bxslider">
+        <li><img src="https://pk.sapphireonline.pk/cdn/shop/files/002SDY24V49D_3.jpg?v=1711951277&width=600" /></li>
+        <li><img src="https://pk.sapphireonline.pk/cdn/shop/files/002SDY24V410_2.jpg?v=1711951322&width=600" /></li>
+        <li><img src="https://pk.sapphireonline.pk/cdn/shop/files/02SEDY24V47D_2.jpg?v=1711951585&width=600" /></li>
+      </ul>
+      
+      <div id="bx-pager">
+        <a data-slide-index="0" href=""><img src="http://placehold.it/73x73&text=1" /></a>
+        <a data-slide-index="1" href=""><img src="http://placehold.it/73x73&text=2" /></a>
+        <a data-slide-index="2" href=""><img src="http://placehold.it/73x73&text=3" /></a>
+      </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+
+$('.bxslider').bxSlider({
+    pagerCustom: '#bx-pager',
+    slideWidth: 500,
+  });
+    </script>
+    
+</body>
+</html>
